@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: white;
+  align-content: center;
+}
+
+#container {
+  width: 1080px;
+  margin:14px auto 0;
+  padding-top:5px;
+}
+
+/*.content { 
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+}*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  align-content: center;
+}
+
+img {
+  width: 476px;
+  height: 684px;
+  margin: 10px;
+  padding: 20px;
+  
+}
+
+
+/* Clear floats after the columns */
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+   .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.leftcolumn {
+  }
+}
+
+p {
+  text-align: justify;
+}
+
+.parag {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+#centered {
+  text-align: center;
+  font-size: 12px;
+  font-family: arial;
+}
